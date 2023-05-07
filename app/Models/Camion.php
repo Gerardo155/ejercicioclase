@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Camion extends Model
 {
 
-    public function transporte(){
+    public function Transporte(){
 
         return $this ->hasMany('App\Models\Transporte');
     }

@@ -15,11 +15,10 @@ class CreateTransporteTable extends Migration
     {
         Schema::create('transporte', function (Blueprint $table) {
             $table->id();
-            $table->String('codigo',45)->unique();
-            $table->String('nombre',145);
-            $table->String('razon_social',175);
+            $table->string('codigo_transporte', 75)->unique;
+            $table->string('nombre_transporte', 120);
+            $table->string('razon_social', 250);
             $table->timestamps();
-
         });
     }
 
@@ -30,6 +29,6 @@ class CreateTransporteTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_transporte');
+        Schema::dropIfExists('transporte');
     }
 }

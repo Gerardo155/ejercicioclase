@@ -35,6 +35,7 @@ class CreateCamionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_camion');
+        Schema::dropIfExists('camion');
     }
 }
+
